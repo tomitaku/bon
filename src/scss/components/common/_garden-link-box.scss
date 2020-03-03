@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.people-link-box {
+.garden-link-box {
   display: flex;
   flex-wrap: wrap;
   width: calc(#{$pc-grid} * 8 + #{$pc-gutter} * 7);
@@ -31,14 +31,14 @@
       }
     }
   }
-  &__article-images {
+  &__garden-images {
     width: 100%;
     margin-bottom: 16px;
     @include mq-sp {
       margin-bottom: 14px;
     }
   }
-  &__article-title {
+  &__garden-name {
     @include heading-s--pc;
     margin-bottom: 8px;
     a {
@@ -52,12 +52,41 @@
       @include heading-s--sp;
     }
   }
-  &__garden-name {
+  &__garden-address {
+    @include text-inner--pc;
+    @include mq-sp {
+      @include text-small--sp;
+      margin-bottom: 4px;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 16px;
+      margin-right: 8px;
+      background: url(https://placehold.jp/12x16.png) no-repeat center center;
+      background-size: cover;
+      position: relative;
+      top: 2px;
+    }
+  }
+  &__garden-phone-number {
     @include text-inner--pc;
     margin-bottom: 45px;
     @include mq-sp {
       @include text-small--sp;
       margin-bottom: 30px;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 16px;
+      margin-right: 8px;
+      background: url(https://placehold.jp/12x16.png) no-repeat center center;
+      background-size: cover;
+      position: relative;
+      top: 2px;
     }
   }
 }

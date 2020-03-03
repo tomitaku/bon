@@ -2,6 +2,10 @@
 
 .article-quote {
   position: relative;
+  margin-bottom: 80px;
+  @include mq-sp {
+    margin-bottom: 30px;
+  }
   &::before {
     content: "“";
     font-size: 60px;
