@@ -1,5 +1,63 @@
 @charset "utf-8";
 
-.header {
-  color: #000;
+.article-quote {
+  position: relative;
+  &::before {
+    content: "“";
+    font-size: 60px;
+    font-family: "FOT-筑紫明朝 Pr6 LB", serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 42px;
+    top: 40px;
+    z-index: 1;
+    line-height: 1;
+  }
+  &::after {
+    content: '';
+    display: block;
+    background: #829192;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .4;
+  }
+  &__wrapper {
+    border: 1px solid $pale-gray;
+    padding: 100px;
+    margin-bottom: 15px;
+  }
+  &__tittle {
+    @include heading-m--pc;
+    color: $pale-green;
+    margin-bottom: 45px;
+    @include mq-sp {
+      @include heading-m--sp;
+      color: $pale-green;
+    }
+  }
+  &__text {
+    @include text-normal--pc;
+    color: $pale-green;
+    @include mq-sp {
+      @include text-normal--sp;
+      color: $pale-green;
+    }
+  }
+  &__quote-source {
+    @include text-inner--pc;
+    color: $pale-green;
+    text-align: right;
+    @include mq-sp {
+      @include text-small--sp;
+      color: $pale-green;
+    }
+  }
 }

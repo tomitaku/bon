@@ -19,6 +19,6 @@
       margin-left: calc( -1 * #{$pc-grid} * 2 - #{$pc-gutter} * 2);
       @include mq-sp {
         display: none;
-      }
+    }
   }
 }
