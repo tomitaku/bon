@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+//PC用テキスト
+@mixin heading-l--pc {
+    font-family: TsukuMinPr6-LB;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.56;
+    color: $dark-green;
+}
+@mixin heading-m--pc {
+    font-family: TsukuMinPr6-LB;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.67;
+    color: $dark-green;
+}
+@mixin heading-s--pc {
+    font-family: TsukuMinPr6-LB;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    color: $dark-green;
+}
+@mixin text-normal--pc {
+    font-family: NotoSans;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2.81;
+    color: $bon-green;
+}
+@mixin text-inner--pc {
+    font-family: NotoSans;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2.14;
+    color: $bon-green;
+}
+@mixin text-small--pc {
+    font-family: NotoSans;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.67;
+    color: $bon-green;
+}
+//SP用テキスト
+@mixin heading-xl--sp {
+    font-family: TsukuMinPr6-LB;
+    font-size: 33px;
+    font-weight: normal;
+    line-height: 1.21;
+    color: $dark-green;
+}
+@mixin heading-l--sp {
+    font-family: TsukuMinPr6-LB;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1.46;
+    color: $dark-green;
+}
+
+@mixin heading-m--sp {
+    font-family: TsukuMinPr6-LB;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.75;
+    color: $dark-green;
+}
+@mixin heading-s--sp {
+    font-family: TsukuMinPr6-LB;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.64;
+    color: $dark-green;
+}
+@mixin text-normal--sp {
+    font-family: NotoSans;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.33;
+    color: $bon-green;
+}
+@mixin text-inner--sp {
+    font-family: NotoSans;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2.31;
+    color: $bon-green;
+}
+@mixin text-small--sp {
+    font-family: NotoSans;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $bon-green;
+}
+//media-query
+@mixin mq-sp($max: $sp-max-width) {
+  @media only screen and (max-width: #{$max}) {
+    @content;
+  }
+}
+@mixin mq-pc($min: $pc-min-width) {
+  @media only screen and (min-width: #{$min}) {
+    @content;
+  }
+}

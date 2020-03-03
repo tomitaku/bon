@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+//COLOR
+$dark-green: #072022;
+$bon-green: #324D4F;
+$pale-green: #829192;
+$accent-red: #E24747;
+$gray: #CCC;
+$pale-gray: #EEE;
+//GRID
+$pc-gutter: calc(100% / 120);
+$pc-grid: calc(100% / 12 - #{$pc-gutter} + #{$pc-gutter} / 12);
+$sp-gutter: calc(100% / 60);
+$sp-grid: calc(100% / 6 - #{$sp-gutter} + #{$sp-gutter} / 6);
+//BREAK POINTS
+$sp-max-width: 800px;
+$pc-max-width: 801px;

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.article-text {
+  @include text-normal--pc;
+  margin-bottom: 80px;
+  @include mq-sp {
+    @include text-normal--sp;
+    margin-bottom: 30px;
+  }
+}

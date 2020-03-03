@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.article-left-image {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  @include mq-sp {
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__image-box {
+    margin-right: 30px;
+    width : calc(44% - 30px);
+    // width: calc(#{$pc-grid} * 3 + #{$pc-gutter} * 3);
+    @include mq-sp {
+      margin-right: 0px;
+      width : 100%;
+    }
+  }
+  &__image-m {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__image-s-box {
+    display: flex;
+    width: 100%;
+    @include mq-sp {
+      margin-bottom: 30px;
+    }
+  }
+  &__image-s {
+    width: calc(50% - 10px);
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+  &__text-box {
+    width : 56%;
+    // width: calc(#{$pc-grid} * 4 + #{$pc-gutter} * 3);
+    @include mq-sp {
+      width : 100%;
+    }
+  }
+  &__text {
+    width: 100%;
+    @include text-normal--pc;
+    @include mq-sp {
+      @include text-normal--sp;
+    }
+  }
+}

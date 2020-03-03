@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.article-message {
+  border: 1px solid $pale-gray;
+  padding: 50px;
+  @include mq-sp {
+    padding: 40px;
+  }
+  &__title {
+    @include heading-s--pc;
+    border-left: 1px solid $dark-green;
+    margin: -50px 0px 0px -50px;
+    padding: 50px;
+    @include mq-sp {
+      @include heading-m--sp;
+      margin: -40px 0px 0px -40px;
+      padding: 40px;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 40px;
+    @include mq-sp {
+      display: none;
+    }
+  }
+  &__text {
+    @include text-inner--pc;
+    @include mq-sp {
+      @include text-inner--sp;
+    }
+  }
+}

@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+//SP用マージン
+.flex {
+  margin: 0px;
+  @include mq-sp {
+    margin: 0px 20px;
+  }
+}
+
+//PC用グリッド設計
+.col-1 {
+    width: $pc-grid;
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-2 {
+    width: calc(#{$pc-grid} * 2 + #{$pc-gutter});
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-3 {
+    width: calc(#{$pc-grid} * 3 + #{$pc-gutter} * 2);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-4 {
+    width: calc(#{$pc-grid} * 4 + #{$pc-gutter} * 3);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-5 {
+    width: calc(#{$pc-grid} * 5 + #{$pc-gutter} * 4);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-6 {
+    width: calc(#{$pc-grid} * 6 + #{$pc-gutter} * 5);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-7 {
+    width: calc(#{$pc-grid} * 7 + #{$pc-gutter} * 6);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-8 {
+    width: calc(#{$pc-grid} * 8 + #{$pc-gutter} * 7);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-9 {
+    width: calc(#{$pc-grid} * 9 + #{$pc-gutter} * 8);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-10 {
+    width: calc(#{$pc-grid} * 10 + #{$pc-gutter} * 9);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-11 {
+    width: calc(#{$pc-grid} * 11 + #{$pc-gutter} * 10);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+.col-12 {
+    width: calc(#{$pc-grid} * 12 + #{$pc-gutter} * 11);
+    margin-right: $pc-gutter;
+    @include mq-sp {
+      width: 100%;
+    }
+}
+
+//PC用開始位置設計
+.offset-2 {
+    margin-left: calc(#{$pc-grid} + #{$pc-gutter});
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-3 {
+    margin-left: calc(#{$pc-grid} * 2 + #{$pc-gutter} * 2);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-4 {
+    margin-left: calc(#{$pc-grid} * 3 + #{$pc-gutter} * 3);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-5 {
+    margin-left: calc(#{$pc-grid} * 4 + #{$pc-gutter} * 4);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-6{
+    margin-left: calc(#{$pc-grid} * 5 + #{$pc-gutter} * 5);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-7 {
+    margin-left: calc(#{$pc-grid} * 6 + #{$pc-gutter} * 6);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-8 {
+    margin-left: calc(#{$pc-grid} * 7 + #{$pc-gutter} * 7);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-9 {
+    margin-left: calc(#{$pc-grid} * 8 + #{$pc-gutter} * 8);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-10 {
+    margin-left: calc(#{$pc-grid} * 9 + #{$pc-gutter} * 9);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-11 {
+    margin-left: calc(#{$pc-grid} * 10 + #{$pc-gutter} * 10);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+.offset-12 {
+    margin-left: calc(#{$pc-grid} * 11 + #{$pc-gutter} * 11);
+    @include mq-sp {
+      margin-left: 0;
+    }
+}
+
+
+/* ////////////
+style
+//////////// */
+.row {
+  display: flex;
+  margin: 10px 0px;
+}
+.row :last-child {
+    margin-right: 0px;
+}
+.row div:nth-child(odd) {
+    background-color: aqua;
+    @include mq-sp {
+      background-color: blue;
+    }
+}
+.row div:nth-child(even) {
+    background-color: bisque;
+}

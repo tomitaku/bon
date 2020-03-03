@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.article-right-image {
+  display: flex;
+  margin-bottom: 80px;
+  @include mq-sp {
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__text-box {
+    width : 56%;
+    @include mq-sp {
+      width : 100%;
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    width: 100%;
+    @include text-normal--pc;
+    @include mq-sp {
+      @include text-normal--sp;
+    }
+  }
+  &__image-box {
+    width : calc(44% - 30px);
+    margin-left: 30px;
+    @include mq-sp {
+      width : 100%;
+      margin-left: 0px;
+    }
+  }
+  &__image-m {
+    width: 100%;
+  }
+}
