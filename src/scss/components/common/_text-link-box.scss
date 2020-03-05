@@ -1,15 +1,19 @@
 @charset "utf-8";
 
-.people-link-box {
+.text-link-box {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
   @include mq-sp {
     width: 100%;
+    margin-bottom: 10px;
   }
   &__wrapper {
     width : calc(100% / 3 - 50px / 3);
     margin-right: 25px;
+    border: 1px solid $pale-gray;
+    padding: 50px;
+    margin-bottom: 25px;
     @include mq-sp {
       width : calc(100% / 2 - 10px);
       margin-right: 20px;
@@ -30,16 +34,10 @@
       }
     }
   }
-  &__article-images {
-    width: 100%;
-    margin-bottom: 16px;
-    @include mq-sp {
-      margin-bottom: 14px;
-    }
-  }
   &__article-title {
     @include heading-s--pc;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
+    text-align: center;
     a {
       text-decoration: underline;
       &:hover {
@@ -51,12 +49,10 @@
       @include heading-s--sp;
     }
   }
-  &__garden-name {
+  &__article-sumally {
     @include text-inner--pc;
-    margin-bottom: 45px;
     @include mq-sp {
-      @include text-small--sp;
-      margin-bottom: 30px;
+      @include text-inner--sp;
     }
   }
 }
