@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.anker-link-box {
+  width: calc(#{$pc-grid} * 6 + #{$pc-gutter} * 5);
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid $pale-gray;
+  padding: 45px 50px;
+  margin-bottom: 80px;
+  @include text-normal--pc;
+  @include mq-sp {
+    width: 100%;
+    margin-bottom: 30px;
+    @include text-inner--sp;
+  }
+  &__list {
+    margin-right: 18px;
+    position:relative;
+    padding-right: 18px;
+    ;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 14px;
+      background: $bon-green;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -6px;
+    }
+  }
+}
