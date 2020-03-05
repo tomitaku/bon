@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.list-link-box {
+  &__wrapper {
+    margin-bottom: 80px;
+    @include mq-sp {
+      margin-bottom: 30px;
+    }
+  }
+  &__list-title {
+    @include heading-m--pc;
+    margin-bottom: 50px;
+    @include mq-sp {
+      margin-bottom: 30px;
+    }
+  }
+  &__list-title {
+    @include heading-m--pc;
+    @include mq-sp {
+      @include heading-m--sp;
+    }
+  }
+  &__list {
+    &::before {
+      margin: 0px 15px 0px 5px;
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 1px;
+      background: #829192;
+      position: relative;
+      top: -6px;
+    }
+    @include text-normal--pc;
+    @include mq-sp {
+      @include text-normal--sp;
+      margin-bottom: 5px;
+    }
+  }
+}

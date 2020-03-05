@@ -10,14 +10,19 @@
   @include text-normal--pc;
   @include mq-sp {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     @include text-inner--sp;
+  }
+  &__list-wrapper {
+    margin-bottom: 50px;
+    @include mq-sp {
+      margin-bottom: 30px;
+    }
   }
   &__list {
     margin-right: 18px;
     position:relative;
     padding-right: 18px;
-    ;
     &::after {
       content: '';
       display: inline-block;
