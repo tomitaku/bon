@@ -9,10 +9,10 @@
     width: 100%;
   }
   &__wrapper {
-    width : calc(100% / 3 - 50px / 3);
+    width: calc(100% / 3 - 50px / 3);
     margin-right: 25px;
     @include mq-sp {
-      width : calc(100% / 2 - 10px);
+      width: calc(100% / 2 - 10px);
       margin-right: 20px;
       &:nth-child(2n) {
         margin-right: 0px;

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.people-link-box {
+.product-link-box {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 80px;
@@ -30,14 +30,14 @@
       }
     }
   }
-  &__article-images {
+  &__product-images {
     width: 100%;
     margin-bottom: 16px;
     @include mq-sp {
       margin-bottom: 14px;
     }
   }
-  &__article-title {
+  &__product-name {
     @include heading-s--pc;
     margin-bottom: 8px;
     a {
@@ -51,7 +51,7 @@
       @include heading-s--sp;
     }
   }
-  &__garden-name {
+  &__product-price {
     @include text-inner--pc;
     margin-bottom: 45px;
     @include mq-sp {
