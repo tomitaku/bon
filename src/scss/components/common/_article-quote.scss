@@ -37,6 +37,9 @@
     border: 1px solid $pale-gray;
     padding: 100px;
     margin-bottom: 15px;
+    @include mq-sp {
+      padding: 100px 40px 40px 40px;
+    }
   }
   &__tittle {
     @include heading-m--pc;

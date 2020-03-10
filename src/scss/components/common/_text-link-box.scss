@@ -17,6 +17,7 @@
     @include mq-sp {
       width : calc(100% / 2 - 10px);
       margin-right: 20px;
+      padding: 40px 30px 30px 30px;
       &:nth-child(2n) {
         margin-right: 0px;
       }
@@ -49,6 +50,7 @@
     }
     @include mq-sp {
       @include heading-s--sp;
+      margin-bottom: 25px;
     }
   }
   &__article-sumally {
