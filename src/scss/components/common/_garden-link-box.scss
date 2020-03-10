@@ -41,13 +41,6 @@
   &__garden-name {
     @include heading-s--pc;
     margin-bottom: 8px;
-    a {
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-        transition:0.5s;
-      }
-    }
     @include mq-sp {
       @include heading-s--sp;
     }

@@ -40,9 +40,11 @@
     text-align: center;
     a {
       text-decoration: underline;
+      color: $dark-green;
       &:hover {
         text-decoration: none;
-        transition:0.5s;
+        color: #fff;
+        transition:3s;
       }
     }
     @include mq-sp {
