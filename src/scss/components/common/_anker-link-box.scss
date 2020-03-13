@@ -7,18 +7,9 @@
   border: 1px solid $pale-gray;
   padding: 45px 50px;
   margin-bottom: 80px;
-  @include text-normal--pc;
   @include mq-sp {
     width: 100%;
-    margin-bottom: 45px;
-    padding: 25px 30px;
-    @include text-inner--sp;
-  }
-  &__list-wrapper {
-    margin-bottom: 50px;
-    @include mq-sp {
-      margin-bottom: 30px;
-    }
+    padding: 40px;
   }
   &__list {
     margin-right: 18px;
@@ -34,6 +25,23 @@
       right: 0;
       top: 50%;
       margin-top: -6px;
+    }
+  }
+  &__link-text {
+    @include text-normal--pc;
+    @include mq-sp {
+      width: 100%;
+      margin-bottom: 45px;
+      padding: 25px 30px;
+      @include text-inner--sp;
+    }
+    a {
+      text-decoration: underline;
+      transition:.1s;
+      color: $bon-green;
+      &:hover {
+        text-decoration: underline transparent;
+      }
     }
   }
 }

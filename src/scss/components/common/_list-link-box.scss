@@ -14,13 +14,7 @@
       margin-bottom: 30px;
     }
   }
-  &__list-title {
-    @include heading-m--pc;
-    @include mq-sp {
-      @include heading-m--sp;
-    }
-  }
-  &__list {
+  &__list-text {
     &::before {
       margin: 0px 15px 0px 5px;
       content: '';
@@ -32,9 +26,19 @@
       top: -6px;
     }
     @include text-normal--pc;
+    a {
+      text-decoration: underline;
+      color: $bon-green;
+      transition:.1s;
+      &:hover {
+        text-decoration: underline transparent;
+      }
+    }
     @include mq-sp {
       @include text-normal--sp;
       margin-bottom: 5px;
+      margin-left: 1rem;
+      text-indent: -1.7rem;
     }
   }
 }

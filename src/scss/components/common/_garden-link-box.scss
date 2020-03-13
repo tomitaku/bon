@@ -50,6 +50,8 @@
     @include mq-sp {
       @include text-small--sp;
       margin-bottom: 4px;
+      margin-left: 1.4rem;
+      text-indent: -1.4rem;
     }
     &::before {
       content: '';
