@@ -31,6 +31,9 @@
       }
     }
   }
+  &__link-wrapper {
+
+  }
   &__garden-images {
     width: 100%;
     margin-bottom: 16px;
@@ -41,6 +44,14 @@
   &__garden-name {
     @include heading-s--pc;
     margin-bottom: 8px;
+    a {
+      text-decoration: underline;
+      color: $bon-green;
+      transition:.1s;
+      &:hover {
+        text-decoration: underline transparent;
+      }
+    }
     @include mq-sp {
       @include heading-s--sp;
     }
