@@ -31,15 +31,11 @@
     }
   }
   &__link-wrapper {
-    margin-bottom: 8px;
     text-decoration: underline;
     color: $bon-green;
     transition:.1s;
     &:hover {
       text-decoration: underline transparent;
-    }
-    @include mq-sp {
-      @include heading-s--sp;
     }
   }
   &__product-images {
@@ -51,6 +47,7 @@
   }
   &__product-name {
     @include heading-s--pc;
+    margin-bottom: 8px;
     @include mq-sp {
       @include heading-s--sp;
     }

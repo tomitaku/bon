@@ -31,7 +31,6 @@
     }
   }
   &__link-wrapper {
-    margin-bottom: 8px;
     text-decoration: underline;
     color: $bon-green;
     transition:.1s;
@@ -48,6 +47,7 @@
   }
   &__article-title {
     @include heading-s--pc;
+    margin-bottom: 8px;
     @include mq-sp {
       @include heading-s--sp;
     }
