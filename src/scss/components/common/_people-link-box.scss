@@ -30,8 +30,14 @@
       }
     }
   }
-  a.__link-wrapper {
-
+  &__link-wrapper {
+    margin-bottom: 8px;
+    text-decoration: underline;
+    color: $bon-green;
+    transition:.1s;
+    &:hover {
+      text-decoration: underline transparent;
+    }
   }
   &__article-images {
     width: 100%;
@@ -42,14 +48,6 @@
   }
   &__article-title {
     @include heading-s--pc;
-    margin-bottom: 8px;
-    a {
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-        transition:0.5s;
-      }
-    }
     @include mq-sp {
       @include heading-s--sp;
     }

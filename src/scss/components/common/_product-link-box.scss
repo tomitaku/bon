@@ -30,6 +30,18 @@
       }
     }
   }
+  &__link-wrapper {
+    margin-bottom: 8px;
+    text-decoration: underline;
+    color: $bon-green;
+    transition:.1s;
+    &:hover {
+      text-decoration: underline transparent;
+    }
+    @include mq-sp {
+      @include heading-s--sp;
+    }
+  }
   &__product-images {
     width: 100%;
     margin-bottom: 16px;
@@ -39,14 +51,6 @@
   }
   &__product-name {
     @include heading-s--pc;
-    margin-bottom: 8px;
-    a {
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-        transition:0.5s;
-      }
-    }
     @include mq-sp {
       @include heading-s--sp;
     }
