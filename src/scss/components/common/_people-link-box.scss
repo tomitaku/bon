@@ -6,6 +6,7 @@
   margin-bottom: 80px;
   @include mq-sp {
     width: 100%;
+    margin-bottom: 30px;
   }
   &__wrapper {
     width: calc(100% / 3 - 50px / 3);
