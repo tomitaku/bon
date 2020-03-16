@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-//SP用マージン
-.flex {
-  margin: 0px;
-  @include mq-sp {
-    margin: 0px 20px 0px 20px;
-  }
-}
-
 //PC用グリッド設計
 .col-1 {
     width: $pc-grid;
