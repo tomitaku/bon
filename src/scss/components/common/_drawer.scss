@@ -2,6 +2,10 @@
 
 .drawer {
   position: relative;
+  @include mq-sp {
+    position: absolute;
+    right: 15px;
+  }
   // inputのcheckboxは非表示
   &__checkbox{
     display: none;
@@ -15,6 +19,9 @@
     position: fixed;
     top: 20px;
     right: 18px;
+    @include mq-sp {
+      position: static;
+    }
     // ハンバーガーアイコンの中の線
     &-parts,
     &-parts:before,
@@ -29,6 +36,7 @@
       left: 0;
       bottom: 0;
       margin: auto;
+      z-index: 5;
     }
     &-parts:before,
     &-parts:after{

@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 .header {
+  @include mq-sp {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    justify-content: center; /* 子要素を中央揃え */
+    position: relative;
+  }
   &__site-logo {
     position: fixed;
     top: 20px;
@@ -9,6 +16,10 @@
     z-index: 100;
     img {
       width: 100%;
+    }
+    @include mq-sp {
+      position: static;
+      z-index: 1;
     }
   }
   &__shopping-bag {
@@ -19,6 +30,14 @@
     z-index: 1;
     img {
       width: 100%;
+    }
+    @include mq-sp {
+      position: absolute;
+      top: 56px;
+      right: 80px;
+      img {
+        width: 90%;
+      }
     }
   }
 }
