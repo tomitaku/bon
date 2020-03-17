@@ -9,7 +9,7 @@
   margin-bottom: 80px;
   @include mq-sp {
     width: 100%;
-    padding: 30px;
+    padding: 30px 35px 10px 35px;
   }
   &__list {
     margin-right: 18px;
@@ -26,7 +26,7 @@
       top: 50%;
       margin-top: -6px;
       @include mq-sp {
-        margin-top: -29px;
+        margin-top: -13px;
       }
     }
   }
@@ -36,6 +36,7 @@
       width: 100%;
       margin-bottom: 45px;
       @include text-inner--sp;
+      margin-bottom: 15px;
     }
     a {
       text-decoration: underline;
