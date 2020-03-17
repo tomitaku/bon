@@ -4,11 +4,24 @@
   padding: 150px 0px 0px 50px;
   border-left: 1px solid $dark-green;
   margin-bottom: 150px;
+  @include mq-sp {
+    padding: 0px;
+    border-left: none;
+    margin-bottom: 50px;
+    text-align: center;
+  }
   &__heading {
     @include heading-l--pc;
     margin-bottom: 25px;
+    @include mq-sp {
+      @include heading-xl--sp;
+      margin-bottom: 0px;
+    }
   }
   &__sumally {
     @include text-inner--pc;
+    @include mq-sp {
+      display: none;
+    }
   }
 }
