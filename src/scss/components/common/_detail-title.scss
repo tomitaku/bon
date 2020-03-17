@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.detail-title {
+  margin-bottom: 100px;
+  &__category-title {
+    @include heading-s--pc;
+    padding: 50px 50px 50px 0px;
+    border-right: 1px solid $dark-green;
+    text-align: right;
+  }
+  &__heading {
+    @include heading-l--pc;
+    margin-bottom: 25px;
+  }
+}

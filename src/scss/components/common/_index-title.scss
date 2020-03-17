@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.index-title {
+  padding: 150px 0px 0px 50px;
+  border-left: 1px solid $dark-green;
+  margin-bottom: 150px;
+  &__heading {
+    @include heading-l--pc;
+    margin-bottom: 25px;
+  }
+  &__sumally {
+    @include text-inner--pc;
+  }
+}
