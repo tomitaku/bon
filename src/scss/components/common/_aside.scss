@@ -37,4 +37,14 @@
       color: $dark-green;
     }
   }
+  &__social-box {
+    position: fixed;
+    bottom: 150px;
+    right: 36px;
+  }
+  &__social-icon {
+    margin-bottom: 10px;
+    width: 17px;
+    display: block;
+  }
 }
