@@ -3,13 +3,16 @@
 .people-title {
   margin-bottom: 30px;
   @include mq-sp {
-    margin-bottom: 50px;
+    display: none;
   }
   &__box {
     position: relative;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 100px;
+    @include mq-sp {
+      margin-bottom: 150px;
+    }
   }
   &__title-wrapper {
     position:absolute;
@@ -19,14 +22,34 @@
   &__title-inner {
     position:absolute;
     top: 23%;
+    @include mq-sp {
+      background-color: #fff;
+      padding: 40px;
+      top: 75%;
+      left: -20px;
+      width: 87%;
+    }
   }
   &__images-wrapper {
-    // position:absolute;
     right: 0px;
     width: 62%;
-    img {
+    @include mq-sp {
       width: 100%;
-      height: auto;;
+    }
+  }
+  &__images--pc {
+    width: 100%;
+    height: auto;
+    @include mq-sp {
+      display: none;
+    }
+  }
+  &__images--sp {
+    display: none;
+    @include mq-sp {
+      display: inline;
+      width: 100vw;
+      margin-left: calc(((100vw - 100%) / 2) * -1);
     }
   }
   &__category-title {
@@ -43,17 +66,20 @@
     margin-bottom: 50px;
     @include mq-sp {
       @include heading-l--sp;
-      padding: 5px 0px 5px 20px;
-      border-left: 1px solid $dark-green;
+      margin-bottom: 30px;
+    }
+  }
+  &__br--pc {
+    @include mq-sp {
+      display: none;
     }
   }
   &__garden-name {
     @include heading-s--pc;
     margin-bottom: 25px;
     @include mq-sp {
-      @include heading-l--sp;
-      padding: 5px 0px 5px 20px;
-      border-left: 1px solid $dark-green;
+      @include heading-s--sp;
+      margin-bottom: 0px;
     }
   }
 }
