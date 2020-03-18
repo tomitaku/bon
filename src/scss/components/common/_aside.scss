@@ -1,19 +1,25 @@
 @charset "utf-8";
 
-.aside__area-wrapper {
-  position: relative;
-  padding-bottom: 0px;
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    display: inline-block;
-    width: 83%;
-    height: 1px; /*下線の太さ*/
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translate(-50%); /*位置調整*/
-    background-color: $pale-gray
+.aside {
+  @include mq-sp {
+    width: calc(100% - 40px);
+    margin: 0px 20px 0px 20px;
+  }
+  &__area-wrapper {
+    position: relative;
+    padding-bottom: 0px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      display: inline-block;
+      width: 83%;
+      height: 1px; /*下線の太さ*/
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translate(-50%); /*位置調整*/
+      background-color: $pale-gray
+    }
   }
 }
