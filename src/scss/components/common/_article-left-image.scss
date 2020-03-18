@@ -55,9 +55,11 @@
   }
   &__text {
     width: 100%;
+    margin-bottom: 40px;
     @include text-normal--pc;
     @include mq-sp {
       @include text-normal--sp;
+      margin-bottom: 30px;
     }
   }
 }
