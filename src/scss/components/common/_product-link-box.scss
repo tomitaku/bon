@@ -9,6 +9,7 @@
   &__area-title {
     @include heading-m--pc;
     margin-bottom: 80px;
+    padding-top: 150px;
     @include mq-sp {
       @include heading-m--sp;
       margin-bottom: 40px;
