@@ -16,6 +16,7 @@
     font-weight: normal;
     color: $dark-green;
     letter-spacing: 1px;
+    text-transform: uppercase;
     @include mq-sp {
       position: static;
       writing-mode: horizontal-tb;
@@ -35,6 +36,7 @@
     font-weight: normal;
     color: $dark-green;
     letter-spacing: 1px;
+    text-transform: uppercase;
     &::before {
       width: 30px;
       height: 30px;
