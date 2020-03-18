@@ -8,7 +8,11 @@
   }
   &__area-title {
     @include heading-m--pc;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
+    @include mq-sp {
+      @include heading-m--sp;
+      margin-bottom: 40px;
+    }
   }
   &__wrapper {
     display: flex;
