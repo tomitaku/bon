@@ -4,7 +4,8 @@
   position: relative;
   @include mq-sp {
     position: absolute;
-    right: 15px;
+    right: 10px;
+    top: 6px;
   }
   // inputのcheckboxは非表示
   &__checkbox{

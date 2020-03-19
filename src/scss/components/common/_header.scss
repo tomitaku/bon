@@ -7,19 +7,23 @@
     padding: 40px;
     justify-content: center; /* 子要素を中央揃え */
     position: relative;
+    @include mq-sp {
+      padding: 25px 20px 20px 20px;
+    }
   }
   &__site-logo {
     position: fixed;
     top: 20px;
     left: 25px;
-    width: 65px;
+    width: 80px;
     z-index: 100;
     img {
-      width: 100%;
+      width: 90%;
     }
     @include mq-sp {
       position: static;
       z-index: 1;
+      width: 55px;
     }
   }
   &__shopping-bag {
@@ -33,8 +37,8 @@
     }
     @include mq-sp {
       position: absolute;
-      top: 56px;
-      right: 80px;
+      top: 23px;
+      right: 69px;
       img {
         width: 90%;
       }
