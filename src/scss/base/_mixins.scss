@@ -36,6 +36,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 @mixin text-inner--pc {
     font-family: NotoSans;
@@ -45,6 +46,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 @mixin text-small--pc {
     font-family: NotoSans;
@@ -54,6 +56,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 //SP用テキスト
 @mixin heading-xl--sp {
@@ -101,6 +104,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 @mixin text-inner--sp {
     font-family: NotoSans;
@@ -110,6 +114,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 @mixin text-small--sp {
     font-family: NotoSans;
@@ -119,6 +124,7 @@
     color: $bon-green;
     font-feature-settings: "palt";
     letter-spacing: 0.125em;
+    text-align: justify;
 }
 //media-query
 @mixin mq-sp($max: $sp-max-width) {
