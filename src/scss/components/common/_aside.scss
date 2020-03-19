@@ -3,8 +3,8 @@
 .aside {
   margin-bottom: 150px;
   @include mq-sp {
-    width: calc(100% - 80px);
-    margin: 0px 40px 60px 40px;
+    width: calc(100% - 60px);
+    margin: 0px 30px 60px 30px;
   }
   &__area-wrapper {
     position: relative;
