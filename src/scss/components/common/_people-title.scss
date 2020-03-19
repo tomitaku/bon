@@ -64,6 +64,7 @@
   &__article-title {
     @include heading-l--pc;
     margin-bottom: 50px;
+    text-shadow: 0px 0px 3px #ffffff;
     @include mq-sp {
       @include heading-l--sp;
       margin-bottom: 30px;
