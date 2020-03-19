@@ -11,4 +11,7 @@
       text-decoration: underline transparent;
     }
   }
+  @include mq-sp {
+    display: none;
+  }
 }

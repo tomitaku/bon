@@ -4,7 +4,7 @@
   background-color: $dark-green;
   padding: 150px 9% 120px 9%;
   @include mq-sp {
-    padding: 60px 60px 50px 60px;
+    padding: 70px 60px 50px 60px;
   }
   &__site-logo {
     filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
@@ -13,6 +13,9 @@
     img {
       width: 80px;
       opacity: .8;
+    }
+    @include mq-sp {
+      padding-bottom: 100px;
     }
   }
   &__copyright {
@@ -72,8 +75,11 @@
       position: static;
       display: flex;
       justify-content: space-between;
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
+      border-bottom: 1px solid #8E9A9A;
+      padding: 0px 100px 60px 100px;
+      margin-bottom: 60px;
     }
   }
   &__social-icon {
@@ -81,7 +87,7 @@
     width: 17px;
     display: block;
     @include mq-sp {
-      fill: #fff;
+      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
     }
   }
 }
