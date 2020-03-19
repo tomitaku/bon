@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.breadcrumbs {
+  @include text-small--pc;
+  margin-bottom: 30px;
+  a {
+    text-decoration: underline;
+    transition:.1s;
+    color: $bon-green;
+    &:hover {
+      text-decoration: underline transparent;
+    }
+  }
+}

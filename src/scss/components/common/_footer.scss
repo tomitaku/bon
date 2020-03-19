@@ -2,9 +2,18 @@
 
 .footer {
   background-color: $dark-green;
-  padding: 150px 9%;
+  padding: 150px 9% 120px 9%;
   @include mq-sp {
     padding: 60px 60px 50px 60px;
+  }
+  &__site-logo {
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    img {
+      width: 80px;
+      opacity: .8;
+    }
   }
   &__copyright {
     position: fixed;
