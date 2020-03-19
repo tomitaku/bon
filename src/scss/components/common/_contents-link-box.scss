@@ -48,6 +48,7 @@
     @include mq-sp {
       @include heading-m--sp;
       color: #fff;
+      text-align: center;
     }
   }
   &__contents-images {
