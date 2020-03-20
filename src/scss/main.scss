@@ -33,3 +33,17 @@
 @import "./components/common/contents";
 @import "./components/common/aside";
 @import "./components/common/breadcrumbs";
+
+.restest {
+  width: 500px;
+  height: 500px;
+  @include mq-sp {
+    background-color: #f5f5f5;
+  }
+  @include mq-tab {
+    background-color: #c0c0c0;
+  }
+  @include mq-pc {
+    background-color: #000000;
+  }
+}
