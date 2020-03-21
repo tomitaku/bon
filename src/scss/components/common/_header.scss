@@ -1,16 +1,30 @@
 @charset "utf-8";
 
 .header {
+  @include mq-tab {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* 子要素を中央揃え */
+    position: relative;
+    padding: 25px 20px 20px 20px;
+  }
   @include mq-sp {
     display: flex;
     width: 100%;
-    padding: 40px;
     justify-content: center; /* 子要素を中央揃え */
     position: relative;
-    @include mq-sp {
-      padding: 25px 20px 20px 20px;
-    }
+    padding: 25px 20px 20px 20px;
   }
+  // @include mq-sp {
+  //   display: flex;
+  //   width: 100%;
+  //   padding: 40px;
+  //   justify-content: center; /* 子要素を中央揃え */
+  //   position: relative;
+  //   @include mq-sp {
+  //     padding: 25px 20px 20px 20px;
+  //   }
+  // }
   &__site-logo {
     position: fixed;
     top: 20px;
@@ -19,6 +33,11 @@
     z-index: 100;
     img {
       width: 90%;
+    }
+    @include mq-tab {
+      position: static;
+      z-index: 1;
+      width: 55px;
     }
     @include mq-sp {
       position: static;
@@ -34,6 +53,14 @@
     z-index: 1;
     img {
       width: 100%;
+    }
+    @include mq-tab {
+      position: absolute;
+      top: 23px;
+      right: 69px;
+      img {
+        width: 90%;
+      }
     }
     @include mq-sp {
       position: absolute;

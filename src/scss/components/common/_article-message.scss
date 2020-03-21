@@ -4,6 +4,10 @@
   border: 1px solid $pale-gray;
   padding: 50px;
   margin-bottom: 80px;
+  @include mq-tab {
+    padding: 40px;
+    margin-bottom: 30px;
+  }
   @include mq-sp {
     padding: 40px;
     margin-bottom: 30px;
@@ -13,6 +17,11 @@
     border-left: 1px solid $dark-green;
     margin: -50px 0px 0px -50px;
     padding: 50px;
+    @include mq-tab {
+      @include heading-m--sp;
+      margin: -40px 0px 0px -40px;
+      padding: 40px;
+    }
     @include mq-sp {
       @include heading-m--sp;
       margin: -40px 0px 0px -40px;
@@ -25,12 +34,18 @@
   }
   &__icon {
     margin-right: 40px;
+    @include mq-tab {
+      display: none;
+    }
     @include mq-sp {
       display: none;
     }
   }
   &__text {
     @include text-inner--pc;
+    @include mq-tab {
+      @include text-inner--sp;
+    }
     @include mq-sp {
       @include text-inner--sp;
     }

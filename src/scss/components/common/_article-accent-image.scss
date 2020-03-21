@@ -5,6 +5,9 @@
   max-height: 900px;
   object-fit: cover;;
   margin-bottom: 80px;
+  @include mq-tab {
+    margin-bottom: 30px;
+  }
   @include mq-sp {
     margin-bottom: 30px;
   }

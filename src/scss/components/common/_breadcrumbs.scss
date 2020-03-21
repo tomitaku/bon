@@ -2,6 +2,9 @@
 
 .breadcrumbs {
   margin-bottom: 30px;
+  @include mq-tab {
+    display: none;
+  }
   @include mq-sp {
     display: none;
   }

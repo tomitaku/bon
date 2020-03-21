@@ -3,6 +3,9 @@
 .list-link-box {
   &__wrapper {
     margin-bottom: 80px;
+    @include mq-tab {
+      margin-bottom: 30px;
+    }
     @include mq-sp {
       margin-bottom: 30px;
     }
@@ -10,6 +13,9 @@
   &__list-title {
     @include heading-m--pc;
     margin-bottom: 50px;
+    @include mq-tab {
+      margin-bottom: 30px;
+    }
     @include mq-sp {
       margin-bottom: 30px;
     }
@@ -33,6 +39,12 @@
       &:hover {
         text-decoration: underline transparent;
       }
+    }
+    @include mq-tab {
+      @include text-normal--sp;
+      margin-bottom: 5px;
+      margin-left: 1.7rem;
+      text-indent: -1.7rem;
     }
     @include mq-sp {
       @include text-normal--sp;

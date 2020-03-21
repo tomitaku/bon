@@ -2,6 +2,11 @@
 
 .drawer {
   position: relative;
+  @include mq-tab {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+  }
   @include mq-sp {
     position: absolute;
     right: 10px;
@@ -20,6 +25,9 @@
     position: fixed;
     top: 20px;
     right: 18px;
+    @include mq-tab {
+      position: static;
+    }
     @include mq-sp {
       position: static;
     }

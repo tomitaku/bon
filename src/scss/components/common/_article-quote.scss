@@ -3,6 +3,9 @@
 .article-quote {
   position: relative;
   margin-bottom: 80px;
+  @include mq-tab {
+    margin-bottom: 30px;
+  }
   @include mq-sp {
     margin-bottom: 30px;
   }
@@ -37,6 +40,9 @@
     border: 1px solid $pale-gray;
     padding: 100px;
     margin-bottom: 15px;
+    @include mq-tab {
+      padding: 100px 40px 40px 40px;
+    }
     @include mq-sp {
       padding: 100px 40px 40px 40px;
     }
@@ -45,6 +51,10 @@
     @include heading-m--pc;
     color: $pale-green;
     margin-bottom: 45px;
+    @include mq-tab {
+      @include heading-m--sp;
+      color: $pale-green;
+    }
     @include mq-sp {
       @include heading-m--sp;
       color: $pale-green;
@@ -53,6 +63,10 @@
   &__text {
     @include text-normal--pc;
     color: $pale-green;
+    @include mq-tab {
+      @include text-normal--sp;
+      color: $pale-green;
+    }
     @include mq-sp {
       @include text-normal--sp;
       color: $pale-green;
@@ -62,6 +76,10 @@
     @include text-inner--pc;
     color: $pale-green;
     text-align: right;
+    @include mq-tab {
+      @include text-small--sp;
+      color: $pale-green;
+    }
     @include mq-sp {
       @include text-small--sp;
       color: $pale-green;

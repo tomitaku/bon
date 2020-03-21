@@ -4,16 +4,26 @@
   display: flex;
   justify-content:space-between;
   border-bottom: 1px solid #8E9A9A;
-  @include mq-sp {
+  @include mq-tab {
+    display: block;
+    padding-bottom: 45px;
+  }@include mq-sp {
+
     display: block;
     padding-bottom: 45px;
   }
   &__box-wrapper {
     margin-bottom: 100px;
+    @include mq-tab {
+      margin-bottom: 0px;
+    }
     @include mq-sp {
       margin-bottom: 0px;
     }
     &:nth-child(n+2):nth-child(-n+5) {
+      @include mq-tab {
+        display: none;
+      }
       @include mq-sp {
         display: none;
       }
@@ -30,6 +40,11 @@
       &:hover {
         text-decoration: underline transparent;
       }
+    }
+    @include mq-tab {
+      @include heading-s--sp;
+      font-size: 12px;
+      text-align: center;
     }
     @include mq-sp {
       @include heading-s--sp;
@@ -58,11 +73,17 @@
         text-decoration: underline transparent;
       }
     }
+    @include mq-tab {
+      display: none;
+    }
     @include mq-sp {
       display: none;
     }
   }
   &__br--pc {
+    @include mq-tab {
+      display: none;
+    }
     @include mq-sp {
       display: none;
     }

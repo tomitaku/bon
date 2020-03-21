@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 55px;
+  @include mq-tab {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   @include mq-sp {
     width: 100%;
     margin-bottom: 10px;
@@ -14,6 +18,14 @@
     border: 1px solid $pale-gray;
     padding: 50px;
     margin-bottom: 25px;
+    @include mq-tab {
+      width: 100%;
+      margin-right: 0px;
+      padding: 35px 30px 25px 30px;
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+    }
     @include mq-sp {
       width: 100%;
       margin-right: 0px;
@@ -30,6 +42,9 @@
     }
     &:nth-child(6n) {
       margin-right: 0px;
+      @include mq-tab {
+        margin-right: 0px;
+      }
       @include mq-sp {
         margin-right: 0px;
       }
@@ -47,6 +62,10 @@
         text-decoration: underline transparent;
       }
     }
+    @include mq-tab {
+      @include heading-s--sp;
+      margin-bottom: 15px;
+    }
     @include mq-sp {
       @include heading-s--sp;
       margin-bottom: 15px;
@@ -54,6 +73,9 @@
   }
   &__article-sumally {
     @include text-inner--pc;
+    @include mq-tab {
+      @include text-inner--sp;
+    }
     @include mq-sp {
       @include text-inner--sp;
     }

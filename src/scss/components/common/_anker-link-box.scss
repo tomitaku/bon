@@ -7,6 +7,10 @@
   border: 1px solid $pale-gray;
   padding: 45px 50px;
   margin-bottom: 80px;
+  @include mq-tab {
+    width: 100%;
+    padding: 30px 35px 10px 35px;
+  }
   @include mq-sp {
     width: 100%;
     padding: 30px 35px 10px 35px;
@@ -25,6 +29,9 @@
       right: 0;
       top: 50%;
       margin-top: -6px;
+      @include mq-tab {
+        margin-top: -13px;
+      }
       @include mq-sp {
         margin-top: -13px;
       }
@@ -32,6 +39,12 @@
   }
   &__link-text {
     @include text-normal--pc;
+    @include mq-tab {
+      width: 100%;
+      margin-bottom: 45px;
+      @include text-inner--sp;
+      margin-bottom: 15px;
+    }
     @include mq-sp {
       width: 100%;
       margin-bottom: 45px;

@@ -3,6 +3,10 @@
 .contents {
   width: calc(100% - 90px);
   border-right: 1px solid $pale-gray;
+  @include mq-tab {
+    width: 100%;
+    border-right: none;
+  }
   @include mq-sp {
     width: 100%;
     border-right: none;
@@ -10,6 +14,11 @@
   &__article-wrapper {
     position: relative;
     padding-bottom: 80px;
+    @include mq-tab {
+      width: calc(100% - 40px);
+      margin: 0px 20px 0px 20px;
+      padding-bottom: 50px;
+    }
     @include mq-sp {
       width: calc(100% - 40px);
       margin: 0px 20px 0px 20px;
