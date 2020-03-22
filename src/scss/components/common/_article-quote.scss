@@ -52,7 +52,7 @@
     color: $pale-green;
     margin-bottom: 45px;
     @include mq-tab {
-      @include heading-m--sp;
+      @include heading-m--pc;
       color: $pale-green;
     }
     @include mq-sp {
@@ -64,7 +64,7 @@
     @include text-normal--pc;
     color: $pale-green;
     @include mq-tab {
-      @include text-normal--sp;
+      @include text-normal--pc;
       color: $pale-green;
     }
     @include mq-sp {
@@ -77,7 +77,7 @@
     color: $pale-green;
     text-align: right;
     @include mq-tab {
-      @include text-small--sp;
+      @include text-inner--pc;
       color: $pale-green;
     }
     @include mq-sp {

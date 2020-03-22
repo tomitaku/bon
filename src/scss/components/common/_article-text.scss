@@ -22,7 +22,7 @@
     }
   }
   @include mq-tab {
-    @include text-normal--sp;
+    @include text-normal--pc;
     margin-bottom: 30px;
   }
   @include mq-sp {

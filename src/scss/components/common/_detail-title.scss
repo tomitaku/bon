@@ -24,7 +24,7 @@
     @include heading-l--pc;
     margin-bottom: 25px;
     @include mq-tab {
-      @include heading-l--sp;
+      @include heading-l--pc;
       padding: 5px 0px 5px 20px;
       border-left: 1px solid $dark-green;
     }

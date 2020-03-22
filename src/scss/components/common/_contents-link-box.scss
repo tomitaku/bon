@@ -49,7 +49,7 @@
     padding:0;
     z-index: 1;
     @include mq-tab {
-      @include heading-m--sp;
+      @include heading-m--pc;
       color: #fff;
       text-align: center;
     }
@@ -67,7 +67,7 @@
     @include text-inner--pc;
     @include mq-tab {
       margin-bottom: 30px;
-      @include text-inner--sp;
+      @include text-inner--pc;
     }
     @include mq-sp {
       margin-bottom: 30px;

@@ -93,7 +93,7 @@
     margin-bottom: 50px;
     text-shadow: 0px 0px 3px #ffffff;
     @include mq-tab {
-      @include heading-l--sp;
+      @include heading-l--pc;
       margin-bottom: 30px;
     }
     @include mq-sp {
@@ -113,7 +113,7 @@
     @include heading-s--pc;
     margin-bottom: 25px;
     @include mq-tab {
-      @include heading-s--sp;
+      @include heading-s--pc;
       margin-bottom: 0px;
     }
     @include mq-sp {

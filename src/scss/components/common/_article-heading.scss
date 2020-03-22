@@ -5,7 +5,7 @@
   margin-bottom: 80px;
   position: relative;
   @include mq-tab {
-    @include heading-m--sp;
+    @include heading-m--pc;
     margin-bottom: 40px;
   }
   @include mq-sp {

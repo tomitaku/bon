@@ -6,7 +6,7 @@
     width: 100%;
     justify-content: center; /* 子要素を中央揃え */
     position: relative;
-    padding: 25px 20px 20px 20px;
+    padding: 40px 20px 40px 20px;
   }
   @include mq-sp {
     display: flex;
@@ -37,7 +37,7 @@
     @include mq-tab {
       position: static;
       z-index: 1;
-      width: 55px;
+      width: 70px;
     }
     @include mq-sp {
       position: static;
@@ -56,7 +56,7 @@
     }
     @include mq-tab {
       position: absolute;
-      top: 23px;
+      top: 42px;
       right: 69px;
       img {
         width: 90%;

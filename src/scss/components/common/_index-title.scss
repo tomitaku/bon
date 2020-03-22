@@ -20,7 +20,7 @@
     @include heading-l--pc;
     margin-bottom: 25px;
     @include mq-tab {
-      @include heading-xl--sp;
+      @include heading-l--pc;
       margin-bottom: 0px;
       position: relative;
       &::before {

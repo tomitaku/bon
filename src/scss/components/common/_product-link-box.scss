@@ -15,7 +15,7 @@
     margin-bottom: 80px;
     padding-top: 150px;
     @include mq-tab {
-      @include heading-m--sp;
+      @include heading-m--pc;
       margin-bottom: 40px;
       padding-top: 60px;
     }
@@ -72,7 +72,7 @@
     @include heading-s--pc;
     margin-bottom: 8px;
     @include mq-tab {
-      @include heading-s--sp;
+      @include heading-s--pc;
     }
     @include mq-sp {
       @include heading-s--sp;
@@ -82,7 +82,7 @@
     @include text-inner--pc;
     margin-bottom: 45px;
     @include mq-tab {
-      @include text-small--sp;
+      @include text-inner--pc;
       margin-bottom: 30px;
     }
     @include mq-sp {

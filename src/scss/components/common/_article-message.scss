@@ -18,7 +18,7 @@
     margin: -50px 0px 0px -50px;
     padding: 50px;
     @include mq-tab {
-      @include heading-m--sp;
+      @include heading-s--pc;
       margin: -40px 0px 0px -40px;
       padding: 40px;
     }
@@ -44,7 +44,7 @@
   &__text {
     @include text-inner--pc;
     @include mq-tab {
-      @include text-inner--sp;
+      @include text-inner--pc;
     }
     @include mq-sp {
       @include text-inner--sp;

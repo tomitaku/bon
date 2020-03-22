@@ -14,9 +14,11 @@
     @include heading-m--pc;
     margin-bottom: 50px;
     @include mq-tab {
+      @include heading-m--pc;
       margin-bottom: 30px;
     }
     @include mq-sp {
+      @include heading-m--sp;
       margin-bottom: 30px;
     }
   }
@@ -41,7 +43,7 @@
       }
     }
     @include mq-tab {
-      @include text-normal--sp;
+      @include text-normal--pc;
       margin-bottom: 5px;
       margin-left: 1.7rem;
       text-indent: -1.7rem;

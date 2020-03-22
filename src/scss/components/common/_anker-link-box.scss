@@ -42,7 +42,7 @@
     @include mq-tab {
       width: 100%;
       margin-bottom: 45px;
-      @include text-inner--sp;
+      @include text-normal--pc;
       margin-bottom: 15px;
     }
     @include mq-sp {
