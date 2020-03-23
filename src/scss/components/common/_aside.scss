@@ -3,11 +3,11 @@
 .aside {
   margin-bottom: 150px;
   @include mq-tab {
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     margin: 0px 20px 60px 20px;
   }
   @include mq-sp {
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     margin: 0px 20px 60px 20px;
   }
   &__area-wrapper {
