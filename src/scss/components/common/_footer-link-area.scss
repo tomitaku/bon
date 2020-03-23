@@ -55,6 +55,8 @@
   &__local-menu {
     @include text-small--pc;
     margin-bottom: 15px;
+    margin-left: 1.4em;
+    text-indent: -1.4em;
     &::before {
       margin: 0 10px 0 0px;
       content: '';
