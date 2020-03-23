@@ -33,14 +33,14 @@
     width: calc(100% / 3 - 50px / 3);
     margin-right: 25px;
     @include mq-tab {
-      width: calc(100% / 2 - 10px);
+      width: calc(100% / 2 - 40px / 3);
       margin-right: 20px;
       &:nth-child(2n) {
         margin-right: 0px;
       }
     }
     @include mq-sp {
-      width: calc(100% / 2 - 10px);
+      width: calc(100% / 2 - 40px / 3);
       margin-right: 20px;
       &:nth-child(2n) {
         margin-right: 0px;
