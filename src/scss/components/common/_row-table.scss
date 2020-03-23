@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.row-table {
+  margin-bottom: 80px;
+  @include text-inner--pc;
+  &__td--heading {
+    width: 20%;
+    margin-right: 20px;
+    border-top: 1px solid $bon-green;
+    border-bottom: 1px solid $bon-green;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__td {
+    width: calc(80% - 20px);
+    border-top: 1px solid $pale-gray;
+    border-bottom: 1px solid $pale-gray;
+    padding: 25px 20px 25px 20px;
+    a {
+      text-decoration: underline;
+      color: $bon-green;
+      transition:.1s;
+      &:hover {
+        text-decoration: underline transparent;
+      }
+    }
+  }
+  @include mq-tab {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @include mq-sp {
+    @include text-small--sp;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
