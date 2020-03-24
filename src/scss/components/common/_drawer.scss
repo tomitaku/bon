@@ -4,8 +4,8 @@
   position: relative;
   @include mq-tab {
     position: absolute;
-    right: 10px;
-    top: 25px;
+    right: 25px;
+    top: 27px;
   }
   @include mq-sp {
     position: absolute;
@@ -27,6 +27,8 @@
     right: 18px;
     @include mq-tab {
       position: static;
+      width: 56px;
+      height: 60px;
     }
     @include mq-sp {
       position: static;
