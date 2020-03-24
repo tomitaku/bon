@@ -13,7 +13,7 @@
     z-index: 5;
     background-color: white;
     margin-bottom: 50px;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
   }
   @include mq-sp {
     display: flex;
@@ -27,7 +27,7 @@
     z-index: 5;
     background-color: white;
     margin-bottom: 50px;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
   }
   &__site-logo {
     position: fixed;
