@@ -6,7 +6,6 @@
 @import "./base/grid";
 @import "./components/common/header";
 @import "./components/common/article-message";
-@import "./components/common/people-link-box";
 @import "./components/common/article-heading";
 @import "./components/common/article-text";
 @import "./components/common/article-large-image";
@@ -15,11 +14,15 @@
 @import "./components/common/article-image";
 @import "./components/common/article-accent-image";
 @import "./components/common/article-quote";
-@import "./components/common/garden-link-box";
 @import "./components/common/text-link-box";
 @import "./components/common/anker-link-box";
 @import "./components/common/list-link-box";
+@import "./components/common/people-link-box";
+@import "./components/common/people-link-box--aside";
+@import "./components/common/garden-link-box";
+@import "./components/common/garden-link-box--aside";
 @import "./components/common/product-link-box";
+@import "./components/common/product-link-box--aside";
 @import "./components/common/contents-link-box";
 @import "./components/parts/rayouts";
 @import "./components/common/header";

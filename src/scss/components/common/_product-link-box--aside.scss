@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.garden-link-box {
+.product-link-box--aside {
   margin-bottom: 80px;
   @include mq-tab {
     width: 100%;
@@ -30,20 +30,23 @@
     flex-wrap: wrap;
   }
   &__list-wrapper {
-    width: calc(100% / 3 - 50px / 3);
-    margin-right: 25px;
+    width: calc(100% / 4 - 60px / 4);
+    margin-right: 20px;
     @include mq-tab {
-      width: 100%;
-      margin-right: 0px;
+      width: calc(100% / 2 - 10px);
+      margin-right: 20px;
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
     }
     @include mq-sp {
-      width: 100%;
-      margin-right: 0px;
+      width: calc(100% / 2 - 10px);
+      margin-right: 20px;
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
     }
-    &:nth-child(3n) {
-      margin-right: 0px;
-    }
-    &:nth-child(6n) {
+    &:nth-child(4n) {
       margin-right: 0px;
     }
   }
@@ -55,7 +58,7 @@
       text-decoration: underline transparent;
     }
   }
-  &__garden-images {
+  &__product-images {
     width: 100%;
     margin-bottom: 16px;
     @include mq-tab {
@@ -65,7 +68,7 @@
       margin-bottom: 14px;
     }
   }
-  &__garden-name {
+  &__product-name {
     @include heading-s--pc;
     margin-bottom: 8px;
     @include mq-tab {
@@ -75,33 +78,7 @@
       @include heading-s--sp;
     }
   }
-  &__garden-address {
-    @include text-inner--pc;
-    @include mq-tab {
-      @include text-inner--pc;
-      margin-bottom: 4px;
-      margin-left: 1.4rem;
-      text-indent: -1.4rem;
-    }
-    @include mq-sp {
-      @include text-small--sp;
-      margin-bottom: 4px;
-      margin-left: 1.4rem;
-      text-indent: -1.4rem;
-    }
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 12px;
-      height: 16px;
-      margin-right: 8px;
-      background: url(https://placehold.jp/12x16.png) no-repeat center center;
-      background-size: cover;
-      position: relative;
-      top: 2px;
-    }
-  }
-  &__garden-phone-number {
+  &__product-price {
     @include text-inner--pc;
     margin-bottom: 45px;
     @include mq-tab {
@@ -111,17 +88,6 @@
     @include mq-sp {
       @include text-small--sp;
       margin-bottom: 30px;
-    }
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 12px;
-      height: 16px;
-      margin-right: 8px;
-      background: url(https://placehold.jp/12x16.png) no-repeat center center;
-      background-size: cover;
-      position: relative;
-      top: 2px;
     }
   }
 }
