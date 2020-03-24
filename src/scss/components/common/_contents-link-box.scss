@@ -3,6 +3,10 @@
 .contents-link-box {
   margin-bottom: 80px;
   padding-top: 150px;
+  @include mq-tab {
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
   @include mq-sp {
     margin-bottom: 30px;
     padding-top: 60px;
