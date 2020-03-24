@@ -3,8 +3,8 @@
 .aside {
   margin-bottom: 150px;
   @include mq-tab {
-    width: calc(100% - 40px);
-    margin: 0px 20px 60px 20px;
+    width: calc(100% - 80px);
+    margin: 0px 40px 60px 40px;
   }
   @include mq-sp {
     width: calc(100% - 40px);
