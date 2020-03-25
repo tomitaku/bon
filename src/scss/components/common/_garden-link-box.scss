@@ -32,13 +32,16 @@
   &__list-wrapper {
     width: calc(100% / 3 - 50px / 3);
     margin-right: 25px;
+    margin-bottom: 45px;
     @include mq-tab {
       width: 100%;
       margin-right: 0px;
+      margin-bottom: 30px;
     }
     @include mq-sp {
       width: 100%;
       margin-right: 0px;
+      margin-bottom: 30px;
     }
     &:nth-child(3n) {
       margin-right: 0px;

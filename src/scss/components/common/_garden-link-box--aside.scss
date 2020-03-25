@@ -32,9 +32,11 @@
   &__list-wrapper {
     width: calc(100% / 3 - 50px / 3);
     margin-right: 25px;
+    margin-bottom: 45px;
     @include mq-tab {
       width: calc(100% / 2 - 10px);
       margin-right: 20px;
+      margin-bottom: 30px;
       &:nth-child(2n) {
         margin-right: 0px;
       }
@@ -42,6 +44,7 @@
     @include mq-sp {
       width: calc(100% / 2 - 10px);
       margin-right: 20px;
+      margin-bottom: 30px;
       &:nth-child(2n) {
         margin-right: 0px;
       }
