@@ -24,7 +24,6 @@
 @import "./components/common/product-link-box";
 @import "./components/common/product-link-box--aside";
 @import "./components/common/contents-link-box";
-@import "./components/parts/rayouts";
 @import "./components/common/header";
 @import "./components/common/drawer";
 @import "./components/common/footer";
@@ -37,6 +36,8 @@
 @import "./components/common/aside";
 @import "./components/common/breadcrumbs";
 @import "./components/common/row-table";
+@import "./components/parts/rayouts";
+@import "./components/parts/button";
 
 .restest {
   width: 500px;
