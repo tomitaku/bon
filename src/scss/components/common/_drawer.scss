@@ -78,13 +78,13 @@
     background: #ffffff;
     color: #000;
     max-width: 100%;
-    width: 320px;
+    width: 420px;
     height: 100vh;
     overflow-y: auto; //スクロール
     -webkit-overflow-scrolling: touch; //スクロール（SP）
     position: fixed;
     top: 0;
-    right: -320px;
+    right: -420px;
   }
   // z-indexの指定（1がメインエリア）
   &__icon{
@@ -133,5 +133,17 @@
   &__menu{
     -webkit-transition: all .7s ;
     transition: all .7s ;
+  }
+  &__item-wrapper {
+    padding: 50px;
+  }
+  &__item {
+    @include heading-m--pc;
+    text-align: center;
+    padding: 30px 0px;
+    a {
+      color: $dark-green;
+      text-decoration: none;
+    }
   }
 }
