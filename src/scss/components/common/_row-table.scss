@@ -3,13 +3,14 @@
 .row-table {
   margin-bottom: 80px;
   @include text-inner--pc;
-  &__td--heading {
+  &__th {
     width: 20%;
     margin-right: 20px;
     border-top: 1px solid $bon-green;
     border-bottom: 1px solid $bon-green;
     text-align: center;
     vertical-align: middle;
+    font-weight: normal;
   }
   &__td {
     width: calc(80% - 20px);
