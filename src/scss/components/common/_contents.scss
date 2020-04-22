@@ -4,11 +4,11 @@
   width: calc(100% - 90px);
   border-right: 1px solid $pale-gray;
   @include mq-tab {
-    width: 100%;
+    width: auto;
     border-right: none;
   }
   @include mq-sp {
-    width: 100%;
+    width: auto;
     border-right: none;
   }
   &__article-wrapper {
