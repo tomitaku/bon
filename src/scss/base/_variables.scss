@@ -13,8 +13,8 @@ $pc-grid: calc(100% / 12 - #{$pc-gutter} + #{$pc-gutter} / 12);
 $sp-gutter: calc(100% / 60);
 $sp-grid: calc(100% / 6 - #{$sp-gutter} + #{$sp-gutter} / 6);
 //BREAK POINTS
-$sp-width: 544px;
-$tab-width: 768px;
 $pc-width: 993px;
+$tab-width: 768px;
+$sp-width: 544px;
 // $sp-max-width: 800px;
 // $pc-max-width: 801px;
